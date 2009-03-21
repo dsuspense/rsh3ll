@@ -1,0 +1,104 @@
+rSh3ll Release Notes
+--------------------
+
+
+rSh3ll (2.1)
+------------------
+Posted on Monday May 29, 2006
+
+rSh3ll (Amazon S3 command shell for Ruby)
+
+The rSh3ll is a Ruby based command shell for managing your Amazon S3 objects.
+It is built upon the Amazon S3 REST Ruby library (S3.rb) and has no external dependencies.
+rSh3ll uses the built-in openssl ruby library (no more dependency on the hmac-sha1 ruby library). 
+
+This is a bugfix release:
+1. Updated "head" command so that it now correctly prints the metadata for a bucket or item.
+
+rSh3ll (2.0)
+------------------
+Posted on Friday May 26, 2006
+
+rSh3ll (Amazon S3 command shell for Ruby)
+
+The rSh3ll is a Ruby based command shell for managing your Amazon S3 objects.
+It is built upon the Amazon S3 REST Ruby library (S3.rb) and has no external dependencies.
+rSh3ll uses the built-in openssl ruby library (no more dependency on the hmac-sha1 ruby library). 
+
+This an enhancement release:
+1. Added command syntax checking and error handling.
+
+rSh3ll (1.2)
+------------------
+Posted on Monday May 22, 2006
+
+rSh3ll (Amazon S3 command shell for Ruby)
+
+The rSh3ll is a Ruby based command shell for managing your Amazon S3 objects.
+It is built upon the Amazon S3 REST Ruby library (S3.rb) and has no external dependencies.
+rSh3ll uses the built-in openssl ruby library (no more dependency on the hmac-sha1 ruby library). 
+
+This is a license update release:
+1. Updated to use the MIT License.
+
+rSh3ll (1.1)
+------------------
+Posted on Sunday May 21, 2006
+
+rSh3ll (Amazon S3 command shell for Ruby)
+
+The rSh3ll is a Ruby based command shell for managing your Amazon S3 objects.
+It is built upon the Amazon S3 REST Ruby library (S3.rb) and has no external dependencies.
+rSh3ll uses the built-in openssl ruby library (no more dependency on the hmac-sha1 ruby library). 
+
+This is an enhancement release:
+1. rSh3ll now supports the 'head' command
+
+rSh3ll (1.0)
+------------------
+Posted on Thursday May 18, 2006
+
+rSh3ll (Amazon S3 command shell for Ruby)
+
+The rSh3ll is a Ruby based command shell for managing your Amazon S3 objects.
+It is built upon the Amazon S3 REST Ruby library (S3.rb) and has no external dependencies.
+rSh3ll uses the built-in openssl ruby library (no more dependency on the hmac-sha1 ruby library). 
+
+This is an enhancement release:
+1. rSh3ll now supports the following commands:
+bucket [bucketname]
+count [prefix]
+createbucket
+delete <id>
+deleteall [prefix] (TODO: support > 1000 item deletes)
+deletebucket
+exit
+get <id>
+getacl ['bucket'|'item'] <id>
+getfile <id> <file>
+gettorrent <id>
+host [hostname]
+list [prefix] [max]
+listbuckets
+pass [password]
+put <id> <data>
+putfile <id> <file>
+putfilewacl <id> <file> ['private'|'public-read'|'public-read-write'|'authenticated-read']
+quit
+setacl ['bucket'|'item'] <id> ['private'|'public-read'|'public-read-write'|'authenticated-read']
+user [username]
+
+2. Commands still needed to be implemented:
+head ['bucket'|'item'] <id>
+listatom [prefix] [max]
+listrss [prefix] [max]
+
+rSh3ll (preview 1)
+------------------
+Posted on Sunday May 7, 2006
+
+rSh3ll (Amazon S3 command shell for Ruby)
+
+The rSh3ll is a Ruby based command shell for managing your Amazon S3 objects.
+It is built upon the Amazon S3 REST Ruby library (S3.rb) and has no external dependencies.
+rSh3ll uses the built-in openssl ruby library (no more dependency on the hmac-sha1 ruby library). 
